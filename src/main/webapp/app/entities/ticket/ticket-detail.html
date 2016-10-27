@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="271016MonolitApp.ticket.detail.title">Ticket</span> {{vm.ticket.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="271016MonolitApp.ticket.title">Title</span></dt>
+        <dd>
+            <span>{{vm.ticket.title}}</span>
+        </dd>
+        <dt><span data-translate="271016MonolitApp.ticket.description">Description</span></dt>
+        <dd>
+            <span>{{vm.ticket.description}}</span>
+        </dd>
+        <dt><span data-translate="271016MonolitApp.ticket.departureDate">Departure Date</span></dt>
+        <dd>
+            <span>{{vm.ticket.departureDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="271016MonolitApp.ticket.price">Price</span></dt>
+        <dd>
+            <span>{{vm.ticket.price}}</span>
+        </dd>
+        <dt><span data-translate="271016MonolitApp.ticket.customer">Customer</span></dt>
+        <dd>
+            <a ui-sref="customer-detail({id:vm.ticket.customer.id})">{{vm.ticket.customer.name}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="ticket-detail.edit({id:vm.ticket.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

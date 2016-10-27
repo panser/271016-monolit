@@ -8,6 +8,7 @@
             "entities": {
                 "main": "Сущности",
                 "customer": "Клиент",
+                "ticket": "Ticket",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

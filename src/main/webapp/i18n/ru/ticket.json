@@ -1,0 +1,26 @@
+{
+    "271016MonolitApp": {
+        "ticket" : {
+            "home": {
+                "title": "Tickets",
+                "createLabel": "Создать новый Ticket",
+                "createOrEditLabel": "Создать или отредактировать Ticket",
+                "search": "Найти Ticket"
+            },
+            "created": "Новый Ticket создан с идентификатором {{ param }}",
+            "updated": "Ticket обновлен с идентификатором {{ param }}",
+            "deleted": "Ticket удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Ticket {{ id }}?"
+            },
+            "detail": {
+                "title": "Ticket"
+            },
+            "title": "Title",
+            "description": "Description",
+            "departureDate": "Departure Date",
+            "price": "Price",
+            "customer": "Customer"
+        }
+    }
+}
