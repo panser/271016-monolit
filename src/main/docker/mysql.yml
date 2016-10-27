@@ -1,0 +1,14 @@
+version: '2'
+services:
+    271016_monolit-mysql:
+        container_name: 271016_monolit-mysql
+        image: mysql:5.7.13
+        # volumes:
+        #     - ~/volumes/jhipster/271016_monolit/mysql/:/var/lib/mysql/
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=271016_monolit
+        ports:
+            - 3306:3306
+        command: mysqld --lower_case_table_names=1 --skip-ssl
